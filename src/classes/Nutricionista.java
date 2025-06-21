@@ -8,8 +8,8 @@ public class Nutricionista extends Pessoa {
         this.crn = "1234321";
     }
 
-    public Nutricionista(String nome, String email, String senha, String tipo_usuario, String crn) {
-        super(nome, email, senha, tipo_usuario);
+    public Nutricionista(String nome, String email, String senha, String crn) {
+        super(nome, email, senha);
         this.crn = crn;
     }
 

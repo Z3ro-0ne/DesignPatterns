@@ -6,13 +6,13 @@ public class Professor extends Pessoa{
     private String turma;
 
     public Professor() {
-        super("Jaider", "mail.com", "vermelho", "Professor");
+        super("Jaider", "mail.com", "vermelho");
         this.matricula = "ABC123";
         this.turma = "AX";
     }
 
-    public Professor(String nome, String email, String senha, String tipo_usuario, String matricula, String turma) {
-        super(nome, email, senha, tipo_usuario);
+    public Professor(String nome, String email, String senha, String matricula, String turma) {
+        super(nome, email, senha);
         this.matricula = matricula;
         this.turma = turma;
     }
@@ -36,5 +36,7 @@ public class Professor extends Pessoa{
     public void obterAluno(String matricula) {}
     public void cadastrarAluno() {};
     public void editarAluno() {};
-    public void validarCardapio() {};
+    public void validarCardapio() {
+        System.out.println("Cardapio Valido");
+    };
 }
