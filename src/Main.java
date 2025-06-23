@@ -10,7 +10,7 @@ public class Main {
 
         Usuario usuario;
         //Coleta de dados pela tela ou banco (assumindo)
-        String tipo = "Aluno";
+        String tipo = "Nutricionista";
         String nome = "Dr. Stone";
         String email = "senku@uni.stone";
         String senha = "science";
@@ -23,6 +23,8 @@ public class Main {
             usuario = new UsuarioAluno(nome, email, senha, data, matricula, turma);
         } else if (tipo.equals("Professor")) {
             usuario = new UsuarioProfessor(nome, email, senha, matricula, turma);
+        } else if(tipo.equals("Nutricionista")) {
+            usuario = new UsuarioNutricionista(nome, email, senha, crn);
         } else {
             throw new RuntimeException("Tipo de usuário não suportado para esta aplicação.");
         }

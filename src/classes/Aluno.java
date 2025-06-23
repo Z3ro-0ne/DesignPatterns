@@ -6,6 +6,8 @@ public class Aluno extends Pessoa{
     private String matricula;
     private String turma;
 
+    private Restricao restricao;
+
     public Aluno() {
         super("Jaider", "mail.com", "vermelho");
         this.data_nascimento = LocalDate.of(1999, 9, 28);
@@ -45,8 +47,10 @@ public class Aluno extends Pessoa{
         this.turma = turma;
     }
 
-    public void obterRestricao() {
-        System.out.println("Restricao: Intolerante a Lactose");
+    public Restricao obterRestricao() {
+        return null;
     }
+
+    public void menu() {}
 
 }

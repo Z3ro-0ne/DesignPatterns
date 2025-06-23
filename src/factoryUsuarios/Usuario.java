@@ -13,6 +13,8 @@ public abstract class Usuario {
         this.senha = senha;
     }
 
+    protected abstract Pessoa criarUsuario();
+
     public String getNome() {
         return nome;
     }
@@ -44,6 +46,8 @@ public abstract class Usuario {
 
         System.out.println("Bem-vindo(a), " + user.getNome() + "!");
 
+        user.menu();
+
     }
 
     public void logout() {
@@ -51,5 +55,4 @@ public abstract class Usuario {
         System.out.println("Até mais " + this.nome + "!");
     }
 
-    protected abstract Pessoa criarUsuario();
 }

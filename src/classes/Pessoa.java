@@ -46,4 +46,6 @@ public abstract class Pessoa {
 
     public void logout() {}
 
+    public abstract void menu();
+
 }

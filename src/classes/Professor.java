@@ -33,10 +33,18 @@ public class Professor extends Pessoa{
         this.turma = turma;
     }
 
-    public void obterAluno(String matricula) {}
+    public void relatorioAluno(String matricula) {}
     public void cadastrarAluno() {};
     public void editarAluno() {};
     public void validarCardapio() {
         System.out.println("Cardapio Valido");
     };
+
+    public void menu() {
+        System.out.println("--- Menu do Professor ---");
+        System.out.println("1. Validar Cardápio");
+        System.out.println("2. Gerenciar Alunos");
+
+        this.validarCardapio();
+    }
 }

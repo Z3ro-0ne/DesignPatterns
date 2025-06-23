@@ -11,4 +11,6 @@ public class Cozinheira extends Pessoa {
 
     public void accederCardapio() {}
 
+    public void menu() {}
+
 }
